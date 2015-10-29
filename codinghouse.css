@@ -1,0 +1,157 @@
+@font-face {
+  font-family: title-font;
+  src: url(fonts/bebasneue-webfont.woff);
+}
+
+@font-face {
+  font-family: quote-font;
+  src: url(fonts/pt_sans-regular-webfont.woff);
+}
+
+@font-face {
+  font-family: test-font;
+  src: url(fonts/pt_sans-bold-webfont.woff);
+}
+
+body {
+  text-align: center;
+  margin: 0px;
+  background-color: #000;
+  color: #fff;
+}
+
+body>img {
+  position: absolute;
+  width: 170px;
+  top: 0px;
+  left: 0px;
+}
+
+video {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  width: auto;
+  min-width: 100%;
+  height: auto;
+  min-height: 100%;
+  z-index: -100;
+  background-size: cover;
+  opacity: 0.4;
+}
+
+body>input.apply {
+  font-family: quote-font;
+  font-weight:bold;
+  background-color: #ea9f53;
+  text-align: right;
+  color: #fff;
+  border: 2px solid #fff;
+  border-radius: 5px;
+  font-size: 24px;
+  padding: 4px 18px 4px 18px;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+body>div.title {
+  font-family: title-font;
+  margin-bottom: 20px;
+}
+
+body>div.title-1 {
+  font-size: 60px;
+  margin-top: 160px;
+}
+
+body>div.title-2 {
+  font-size: 40px;
+}
+
+body>div.title-2>span {
+  text-decoration: underline;
+}
+
+body>div.title-3 {
+  font-size: 34px;
+}
+
+body>div.quote {
+  position: relative;
+  font-family: quote-font;
+  margin: 15px;
+  display: inline-block;
+  vertical-align: top;
+  min-width: 150px;
+  width: 30%;
+}
+
+blockquote:before {
+  font-family:FontAwesome;
+  font-style: normal;
+  font-size: 76px;
+  position: absolute;
+  top: 0px;
+  left: 10px;
+  content: "\201C";
+  color: #ea9f53;
+}
+
+body>div.quote>blockquote>div {
+  margin: 10px 0px 10px 0px;
+  display: inline-block;
+  width: 75%;
+  padding: 0px;
+}
+
+body>div.quote>blockquote {
+  background-color: rgba(42,42,42,0.6);
+  border: 1px solid #808080;
+  border-radius: 7px;
+  font-size: 20px;
+  font-style: italic;
+  margin: 0px;
+}
+
+blockquote:after {
+  font-family:FontAwesome;
+  font-style: normal;
+  font-size: 76px;
+  content: "\201d";
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  color: #ea9f53;
+}
+
+body>div.quote>div.author {
+  font-size: 14px;
+  text-align: left;
+}
+
+body>div.quote>div.author>img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  vertical-align: middle;
+  margin: 5px;
+}
+
+body>div.ask>i {
+  vertical-align: bottom;
+}
+
+body>div.ask {
+  background-color: #e67e22;
+  color: #fff;
+  border: 1px solid #fff;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  text-align: center;
+  font-size: 32px;
+  position: absolute;
+  left: 25px;
+  bottom: 10px;
+}
